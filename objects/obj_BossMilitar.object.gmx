@@ -34,6 +34,11 @@ global.nombreBoss = "Hunter";
 global.estadoBoss = "stop";
 faseAtaque = 0;
 color = 255;
+balaBoss = obj_balaBossMilitar;
+balaBoss2 = obj_balaBossMilitar2;
+balaBoss3 = obj_balaBossMilitar3;
+dano = 0;
+
 velocidad = 0;
 </string>
           </argument>
@@ -58,7 +63,8 @@ velocidad = 0;
           <argument>
             <kind>1</kind>
             <string>///Estados Boss
-
+event_inherited();
+/*
 switch (global.estadoBoss)
 {
     case "stop":
@@ -137,6 +143,7 @@ switch (global.estadoBoss)
         }    
     break;
 }
+*/
 </string>
           </argument>
         </arguments>

@@ -28,7 +28,7 @@
             <string>///Variables Boss
 image_speed = 0.2;
 global.saludBoss = 0;
-//global.nombreBoss = "Arenero";
+global.nombreBoss = "";
 global.estadoBoss = "stop";
 faseAtaque = 0;
 color = 255;
@@ -71,25 +71,30 @@ switch (global.estadoBoss)
         switch (faseAtaque)
         {
         
-            //fase cero
+            //fase cero --no Atack
             case 0:
-                if(instance_exists(par_balaplayer)) faseAtaque++;
+                if(instance_exists(par_balaplayer))
+                {
+                    faseAtaque++;
+                                
+                    if (global.nombreBoss == "GhostNeon") path_start( path_BossNeon,5,2,0); else
+                    if (global.nombreBoss == "Electro") path_start( path_BossElectro,5,2,0);                 
+                }
+                
             break;
             
-            //primera fase
+            //primera fase -- init atack
             case 1:
-                speed = 2;
-                //Crea disparo
-                if (instance_number(balaBoss)&lt;3 and place_free (x , y +5))
-                     instance_create( x, y, balaBoss);
-             
-                 if global.saludBoss &lt;= 70 faseAtaque++;
+                if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack1();}
+                else{scr_faseAtack1();}
              
             break;
     
              //segunda fase
             case 2:
                 //speed = 3;
+                if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack2();}
+                
                 if (instance_number( balaBoss)&lt;6 and place_free (x , y +5))
                     instance_create( x, y, balaBoss);
                     
@@ -98,11 +103,16 @@ switch (global.estadoBoss)
             break;
             
             //tercera fase 
-            case 3:                  
-                if (instance_number( balaBoss2)&lt;=4 and place_free( x, y + 15))
-                    instance_create( x, y + 2, balaBoss2);
-                    
-                if global.saludBoss &lt;= 30 faseAtaque++;
+            case 3:
+                if (global.nombreBoss == "Electro"){scr_ElectroFaseAtack3();}else
+                if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack3();}
+                else{
+                    if (instance_number( balaBoss2)&lt;=4 and place_free( x, y + 15))
+                        instance_create( x, y + 2, balaBoss2);
+                        
+                    if global.saludBoss &lt;= 30 faseAtaque++;
+                }
+                
             
             break;
             

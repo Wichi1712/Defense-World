@@ -9,6 +9,8 @@
   <sounds name="sound">
     <sound>sound\Creep</sound>
     <sound>sound\Disparo</sound>
+    <sound>sound\sound2</sound>
+    <sound>sound\sound3</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_selectorizquierda</sprite>
@@ -26,15 +28,16 @@
     <sprites name="Enemigos">
       <sprites name="Primero">
         <sprite>sprites\spr_flota1</sprite>
+        <sprite>sprites\spr_tropArena</sprite>
         <sprite>sprites\spr_fire2</sprite>
         <sprite>sprites\spr_fire</sprite>
         <sprite>sprites\spr_enemigo</sprite>
         <sprite>sprites\spr_balaOvni</sprite>
         <sprite>sprites\spr_balaBoss</sprite>
         <sprite>sprites\spr_bala1</sprite>
-        <sprite>sprites\spr_JefeSupremo</sprite>
         <sprite>sprites\spr_admiracion</sprite>
         <sprite>sprites\spr_BossArena</sprite>
+        <sprite>sprites\spr_BossArena2</sprite>
       </sprites>
       <sprites name="Segundo">
         <sprite>sprites\spr_bossneon</sprite>
@@ -94,6 +97,7 @@
       </sprites>
       <sprite>sprites\spr_topbar_boss</sprite>
       <sprite>sprites\spr_barra_BossFondo</sprite>
+      <sprite>sprites\spr_JefeSupremo</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_tanquemove</sprite>
@@ -146,6 +150,12 @@
     <script>scripts\scr_esquivaAtaque.gml</script>
     <script>scripts\scr_enterBoss.gml</script>
     <script>scripts\scr_bonus.gml</script>
+    <script>scripts\scr_faseAtack0.gml</script>
+    <script>scripts\scr_faseAtack1.gml</script>
+    <script>scripts\scr_ElectroFaseAtack3.gml</script>
+    <script>scripts\scr_MilitarFaseAtack1.gml</script>
+    <script>scripts\scr_MilitarFaseAtack3.gml</script>
+    <script>scripts\scr_MilitarFaseAtack2.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_barra</font>
