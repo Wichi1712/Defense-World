@@ -37,7 +37,7 @@ color = 255;
 balaBoss = obj_balaBossMilitar;
 balaBoss2 = obj_balaBossMilitar2;
 balaBoss3 = obj_balaBossMilitar3;
-dano = 0;
+dano = 1.5;
 
 velocidad = 0;
 </string>
@@ -144,32 +144,6 @@ switch (global.estadoBoss)
     break;
 }
 */
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_balaplayer">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///reduce la energia
-
-global.saludBoss -= 1;
-
 </string>
           </argument>
         </arguments>

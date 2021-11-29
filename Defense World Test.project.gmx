@@ -156,6 +156,10 @@
     <script>scripts\scr_MilitarFaseAtack1.gml</script>
     <script>scripts\scr_MilitarFaseAtack3.gml</script>
     <script>scripts\scr_MilitarFaseAtack2.gml</script>
+    <script>scripts\scr_MarinoFaseAtack1.gml</script>
+    <script>scripts\scr_MarinoFaseAtack2.gml</script>
+    <script>scripts\scr_MarinoFaseAtack3.gml</script>
+    <script>scripts\scr_MarinoFaseAtack4.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_barra</font>

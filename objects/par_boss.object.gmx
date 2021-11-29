@@ -85,7 +85,9 @@ switch (global.estadoBoss)
             
             //primera fase -- init atack
             case 1:
-                if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack1();}
+                if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack1();
+                }else
+                if(global.nombreBoss == "Marino"){scr_MarinoFaseAtack1();}
                 else{scr_faseAtack1();}
              
             break;
@@ -94,6 +96,8 @@ switch (global.estadoBoss)
             case 2:
                 //speed = 3;
                 if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack2();}
+                else
+                if(global.nombreBoss == "Marino"){scr_MarinoFaseAtack2();}
                 
                 if (instance_number( balaBoss)&lt;6 and place_free (x , y +5))
                     instance_create( x, y, balaBoss);
@@ -104,8 +108,11 @@ switch (global.estadoBoss)
             
             //tercera fase 
             case 3:
-                if (global.nombreBoss == "Electro"){scr_ElectroFaseAtack3();}else
+                if (global.nombreBoss == "Electro"){scr_ElectroFaseAtack3();}
+                else
                 if (global.nombreBoss == "Hunter"){scr_MilitarFaseAtack3();}
+                else
+                if (global.nombreBoss == "Marino"){scr_MarinoFaseAtack3();}
                 else{
                     if (instance_number( balaBoss2)&lt;=4 and place_free( x, y + 15))
                         instance_create( x, y + 2, balaBoss2);
@@ -118,11 +125,15 @@ switch (global.estadoBoss)
             
             //cuarta fase
             case 4: 
-                //speed = 3;     
-                if (instance_number( balaBoss2)&lt;=7 and place_free( x, y + 15))
-                    instance_create( x, y + 2, balaBoss2);
-                    
-                if global.saludBoss &lt;= 0 faseAtaque++;
+                //speed = 3;  
+                if(global.nombreBoss == "Marino"){scr_MarinoFaseAtack4();}
+                else
+                {
+                    if (instance_number( balaBoss2)&lt;=7 and place_free( x, y + 15))
+                        instance_create( x, y + 2, balaBoss2);
+                        
+                    if global.saludBoss &lt;= 0 faseAtaque++;
+                }
                 
             break;
             
