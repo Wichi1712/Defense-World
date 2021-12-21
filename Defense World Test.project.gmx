@@ -160,6 +160,14 @@
     <script>scripts\scr_MarinoFaseAtack2.gml</script>
     <script>scripts\scr_MarinoFaseAtack3.gml</script>
     <script>scripts\scr_MarinoFaseAtack4.gml</script>
+    <script>scripts\scr_IceFaseAtack1.gml</script>
+    <script>scripts\scr_IceFaseAtack2.gml</script>
+    <script>scripts\scr_IceFaseAtack3.gml</script>
+    <script>scripts\scr_IceFaseAtack4.gml</script>
+    <script>scripts\scr_FireFaseAtack1.gml</script>
+    <script>scripts\scr_FireFaseAtack2.gml</script>
+    <script>scripts\scr_FireFaseAtack3.gml</script>
+    <script>scripts\scr_FireFaseAtack4.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_barra</font>

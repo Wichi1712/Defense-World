@@ -163,8 +163,8 @@ switch (global.estadoBoss)
             <string>///Cambio de direccion cuando llega al extremo de la room
 //if ( global.estadoBoss = "war")
 //{
-    if( x +32 &gt; room_width){ direction = 180;}
-    else if( x -32 &lt; 0){ direction = 0;}
+    //if( x +32 &gt; room_width){ direction = 180;}
+    //else if( x -32 &lt; 0){ direction = 0;}
 //}
 </string>
           </argument>

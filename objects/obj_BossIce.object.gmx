@@ -31,11 +31,18 @@ image_speed = 0.5;
 global.saludBoss = 100;
 global.nombreBoss = "Kristal";
 global.estadoBoss = "stop";
-alarm[1] = -1;
 faseAtaque = 0;
+color = 255;
+balaBoss = obj_balaboos_ice;
+balaBoss2 = obj_cubeIce;
+balaBoss3 = obj_balaBoss;
+balaBoss4 = obj_LanzaHielo
+escudoBoss = obj_EscudoIce;
+
+dano = 1.5;
+alarm[1] = -1;
 InicioAlarma0 = 120;
 InicioAlarma1 = 200;
-color = 255;
 </string>
           </argument>
         </arguments>
@@ -106,6 +113,8 @@ if( !instance_exists( Escudo)){ instance_create( x, y,Escudo);}
           <argument>
             <kind>1</kind>
             <string>///Estados Boss
+event_inherited();
+/*
 switch (global.estadoBoss)
 {
     case "stop":
@@ -191,53 +200,11 @@ switch (global.estadoBoss)
         }
     break;
 }
-   
+*/  
 
 </string>
           </argument>
         </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_balaplayer">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///reduce la energia
-
-global.saludBoss -= 1;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>113</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_reverse_xdir</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
       </action>
     </event>
   </events>

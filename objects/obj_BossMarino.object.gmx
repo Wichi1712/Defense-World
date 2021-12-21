@@ -190,11 +190,19 @@ switch (global.estadoBoss)
           <argument>
             <kind>1</kind>
             <string>///Cambio de direccion cuando llega al extremo de la room
-if ( global.estadoBoss = "war")
-{
-    if( x +32 &gt; room_width){ direction = 180;}
-    else if( x -32 &lt; 0){ direction = 0;}
-}
+/*
+NOTA:
+Es necesario poner un event_inherint para que el event
+no sobreescriba el evento del objeto padre obj_parent.
+O tambien se podria quitar el evento intersect Boundary 
+de nuestro objeto*/
+
+event_inherited();
+//if ( global.estadoBoss = "war")
+//{
+   // if( x +32 &gt; room_width){ direction = 180;}
+    //else if( x -32 &lt; 0){ direction = 0;}
+//}
 </string>
           </argument>
         </arguments>

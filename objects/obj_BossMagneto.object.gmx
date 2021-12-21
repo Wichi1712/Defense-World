@@ -26,13 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>///Variables Boss
-
 image_speed = 0.3;
 global.saludBoss = 100;
 global.nombreBoss = "Magnus";
 global.estadoBoss = "stop";
 faseAtaque = 0;
 color = 255;
+balaBoss = obj_balaBossMagn0;
+balaBoss2 = obj_balaBossMagneto;
+balaBoss3 = obj_maxMagneto;
+balaBoss4 = obj_minMagneto;
+dano = 1;
 </string>
           </argument>
         </arguments>
@@ -138,62 +142,6 @@ switch (global.estadoBoss)
             break;
         }
     break;
-}
-   
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="par_balaplayer">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///reduce la energia
-
-global.saludBoss -= 1;
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Cambio de direccion cuando llega al extremo de la room
-if ( global.estadoBoss = "war")
-{
-    if( x +32 &gt; room_width){ direction = 180;}
-    else if( x -32 &lt; 0){ direction = 0;}
 }
 </string>
           </argument>
