@@ -38,6 +38,7 @@
         <sprite>sprites\spr_admiracion</sprite>
         <sprite>sprites\spr_BossArena</sprite>
         <sprite>sprites\spr_BossArena2</sprite>
+        <sprite>sprites\spr_hurricane</sprite>
       </sprites>
       <sprites name="Segundo">
         <sprite>sprites\spr_bossneon</sprite>
@@ -187,6 +188,7 @@
         <object>objects\obj_balaBoss</object>
         <object>objects\obj_fire2</object>
         <object>objects\obj_bala1</object>
+        <object>objects\obj_hurricane</object>
       </objects>
       <objects name="segundo">
         <object>objects\obj_BossNeon</object>

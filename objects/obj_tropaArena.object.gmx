@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>///Variables
 image_speed = 0.2;
-vida = 1;
+vida = 5;
 oscuro = 255;
 
 movHorizontal = 2;

@@ -103,8 +103,8 @@ switch (global.estadoBoss)
                 if(global.nombreBoss == "Vulcano"){scr_FireFaseAtack2();}//else
                 //if(global.nombreBoss == "Magnus"){scr_MagnusFaseAtack2();}
                 else{
-                    if (instance_number( balaBoss)&lt;6 and place_free (x , y +5))
-                        instance_create( x, y + 5, balaBoss);
+                    if (instance_number( balaBoss)&lt;6 and place_free (x , y +20))
+                        instance_create( x, y + 20, balaBoss);
                         
                     if global.saludBoss &lt;= 50 faseAtaque++;
                 }
@@ -139,8 +139,11 @@ switch (global.estadoBoss)
                 //if(global.nombreBoss == "Magnus"){scr_MagnusFaseAtack4();}
                 else
                 {
-                    if (instance_number( balaBoss2)&lt;=7 and place_free( x, y + 15))
-                        instance_create( x, y + 2, balaBoss2);
+                    //if (instance_number( balaBoss2)&lt;=7 and place_free( x, y + 15))
+                        //instance_create( x, y + 2, balaBoss2);
+                        
+                    if (distance_to_object( obj_hurricane) &gt; 20)
+                        instance_create(x,y + 20,obj_hurricane);  
                         
                     if global.saludBoss &lt;= 0 faseAtaque++;
                 }

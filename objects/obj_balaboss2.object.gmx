@@ -33,9 +33,9 @@ image_speed = 0.5;
 //angulo de la imagen
 if ( instance_exists( obj_tanque))
 {
-direction = point_direction(x,y,obj_tanque.x,obj_tanque.y);
+    direction = point_direction(x,y,obj_tanque.x,obj_tanque.y);
 
-//direction = image_angle;
+    //direction = image_angle;
 }
 </string>
           </argument>
@@ -71,7 +71,7 @@ en este caso a nave*/
 /*fin seguimiento*/
 
 //Creamos efecto de humo
-effect_create_below( ef_explosion, x, y, 0.3, c_white);
+//effect_create_below( ef_explosion, x, y, 0.1, c_white);
 
 </string>
           </argument>

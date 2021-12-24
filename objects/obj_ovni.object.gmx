@@ -35,7 +35,7 @@ global.nombreBoss = "Arenero";
 //color = 255;
 balaBoss = obj_balaBoss;
 balaBoss2 = obj_balaBoss2;
-dano = 1.5;
+dano = 1;
 </string>
           </argument>
         </arguments>
