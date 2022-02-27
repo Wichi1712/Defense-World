@@ -35,6 +35,7 @@ global.nombreBoss = "Arenero";
 //color = 255;
 balaBoss = obj_balaBoss;
 balaBoss2 = obj_balaBoss2;
+balaBoss3 = obj_hurricane;
 dano = 1;
 </string>
           </argument>

@@ -26,9 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Variables de seleccion
-//window_set_fullscreen( true);
 window_set_caption( "Defense World");
-window_set_fullscreen( true);
+//window_set_fullscreen( true);
 display_set_gui_size(840,680);//esto es para el evento draw gui
 
 //start_menu   - menu de inicio
@@ -202,10 +201,10 @@ draw_set_font( font_menu);
 draw_set_halign( fa_center);
 
 //Texto para Instrucciones
-txtInstrucciones = "Movimientos y disparo:#&lt;== Izquierda#==&gt; Derecha#Arriba para saltar#A para disparar#ESCAPE pausar el juego";
+txtInstrucciones = "Movimientos y disparo:#&lt;= Izquierda#=&gt; Derecha#Arriba para saltar#A disparar#ESCAPE pausar el juego";
 strSalirInstrucciones ="Pulse ENTER para volver al menu";
 txtInicio = "Pulse cualquier tecla para comenzar";
-txtInicio2 ="Desarrollado por Wilfredo Chipana 2018";
+txtDesarrollador ="Desarrollado por Wilfredo Chipana 2018";
 
 //Texto para Opciones
 txtOpciones = "Estas son las opciones:#ESPACIO para maximizar o minimizar pantalla";
@@ -231,10 +230,10 @@ case "inicio":
      draw_text( room_width div 2 - 1, 500 - 1, txtInicio);
      
      draw_set_font(font_pequeno);
-     draw_set_color( c_black);
-     draw_text( room_width div 2, 600, txtInicio2);
      draw_set_color( c_white);
-     draw_text( room_width div 2 - 1, 600 - 1, txtInicio2);
+     draw_text( room_width div 2, 600, txtDesarrollador);
+     //draw_set_color( c_white);
+     //draw_text( room_width div 2 - 1, 600 - 1, txtDesarrollador);
    //Fin mensaje para usuario
 break;
 //Fin pantalla de inicio
@@ -243,8 +242,8 @@ case "menu":
    //Dibuja logo
    draw_background_stretched( bg_fondoMenu,x,y, room_width, room_height);
    draw_rectangle_color(0,0, room_width, room_height, c_white,c_black,c_black,0,1);
-   draw_sprite_ext( spr_tanque_stop, 0, room_width div 2 + 290, room_height div 2 + 190, 2, 2, 0, c_dkgray, 1);
-   //draw_sprite_ext( spr_tanque_stop, 0, room_width div 2, room_height div 4, 2, 2, 0, c_white, 1);
+   //Dibuja una imagen del tanque en la esquina inferior derecha
+   //draw_sprite_ext( spr_tanque_stop, 0, room_width div 2 + 290, room_height div 2 + 190, 2, 2, 0, c_dkgray, 1);
 
    //Texto titulo  
    draw_set_color( c_black);

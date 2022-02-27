@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if ( instance_exists( obj_base))
+            <string>/*
+Este objeto solo esta presente en el modo mapa, permite volver 
+al menu mapa para evitar enfrentar a los boss de cada area.
+
+*/
+
+//if ( instance_exists( obj_base))
 //{instance_create(64,0 , obj_control);}
 
 modoMapa = false;
@@ -97,7 +103,7 @@ if(room != rom_mapa){
 
 if ( instance_exists( obj_control)){
     if( obj_control.alarm[1] == room_speed * 2){
-    alarm[0] = 50;
+        alarm[0] = 50;
     }
 }
 </string>
