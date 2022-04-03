@@ -132,7 +132,10 @@ switch (global.estadoBoss)
             
             //cuarta fase
             case 4: 
-                //speed = 3;  
+                //speed = 3;
+                if(global.nombreBoss == "GhostNeon"){scr_faseAtack2();}else
+                if(global.nombreBoss == "Electro"){scr_ElectroFaseAtack4();}else
+                if(global.nombreBoss == "Hunter"){scr_MilitarFaseAtack4();}else
                 if(global.nombreBoss == "Marino"){scr_MarinoFaseAtack4();}else
                 if(global.nombreBoss == "Kristal"){scr_IceFaseAtack4();}else
                 if(global.nombreBoss == "Vulcano"){scr_FireFaseAtack4();}//else
@@ -143,7 +146,7 @@ switch (global.estadoBoss)
                         //instance_create( x, y + 2, balaBoss2);
                         
                     if (distance_to_object( obj_hurricane) &gt; 20)
-                        instance_create(x,y + 20,obj_hurricane);  
+                        instance_create(x,y + 20, obj_hurricane);  
                         
                     if global.saludBoss &lt;= 0 faseAtaque++;
                 }

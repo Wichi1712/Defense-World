@@ -51,7 +51,7 @@ vspeed = 8;
           <argument>
             <kind>1</kind>
             <string>///Mantiene la posicion X
-x = obj_ovni.x
+x = par_boss.x;//obj_ovni.x
 </string>
           </argument>
         </arguments>

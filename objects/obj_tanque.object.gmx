@@ -364,6 +364,7 @@ i.String = string(Score);
             <kind>1</kind>
             <string>///Color de impacto
 //cada vez que recibe un impacto de bala cambia de color
+//Activa la alarma
 alarm[0] = room_speed/4;
 //image_blend = c_black;
 </string>
@@ -534,6 +535,7 @@ i.String = string(Score);
             <kind>1</kind>
             <string>///Color de impacto
 //cada vez que recibe un impacto de bala cambia de color
+//Activa la alarma
 alarm[0] = room_speed/4;
 //image_blend = c_black;
 </string>

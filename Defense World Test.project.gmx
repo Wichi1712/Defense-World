@@ -138,6 +138,7 @@
     <background>background\bg_fire</background>
     <background>background\bg_magneto</background>
     <background>background\bg_tiles</background>
+    <background>background\bg_fondoNegro</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_BossNeon</path>
@@ -153,10 +154,13 @@
     <script>scripts\scr_bonus.gml</script>
     <script>scripts\scr_faseAtack0.gml</script>
     <script>scripts\scr_faseAtack1.gml</script>
+    <script>scripts\scr_faseAtack2.gml</script>
     <script>scripts\scr_ElectroFaseAtack3.gml</script>
+    <script>scripts\scr_ElectroFaseAtack4.gml</script>
     <script>scripts\scr_MilitarFaseAtack1.gml</script>
-    <script>scripts\scr_MilitarFaseAtack3.gml</script>
     <script>scripts\scr_MilitarFaseAtack2.gml</script>
+    <script>scripts\scr_MilitarFaseAtack3.gml</script>
+    <script>scripts\scr_MilitarFaseAtack4.gml</script>
     <script>scripts\scr_MarinoFaseAtack1.gml</script>
     <script>scripts\scr_MarinoFaseAtack2.gml</script>
     <script>scripts\scr_MarinoFaseAtack3.gml</script>

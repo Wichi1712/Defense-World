@@ -1,7 +1,7 @@
 ///Color al recibir daño
 if ( oscuro < 255)
 {
-oscuro +=10;
+    oscuro +=10;
 }
 else { oscuro = 255;}
 
