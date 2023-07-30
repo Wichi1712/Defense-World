@@ -142,12 +142,13 @@ switch (global.estadoBoss)
                 //if(global.nombreBoss == "Magnus"){scr_MagnusFaseAtack4();}
                 else
                 {
-                    //if (instance_number( balaBoss2)&lt;=7 and place_free( x, y + 15))
-                        //instance_create( x, y + 2, balaBoss2);
+                    //Esta parte es para el primer boss
                         
-                    if (distance_to_object( obj_hurricane) &gt; 20)
-                        instance_create(x,y + 20, obj_hurricane);  
-                        
+                    //if (distance_to_object( obj_hurricane) &gt; 20)
+                     //   instance_create(x,y + 20, obj_hurricane);  
+                       
+                    if ( !instance_exists( obj_hurricane)) instance_create(x,y + 20,obj_hurricane)
+                      
                     if global.saludBoss &lt;= 0 faseAtaque++;
                 }
                 
@@ -214,7 +215,7 @@ global.saludBoss -= dano;
         <exetype>2</exetype>
         <functionname></functionname>
         <codestring></codestring>
-        <whoName>obj_ovni</whoName>
+        <whoName>obj_BossDesierto</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>

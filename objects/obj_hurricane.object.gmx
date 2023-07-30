@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0.03;
+            <string>image_speed = 0.08;
 //x = obj_ovni.x;
 vspeed = 8;
 </string>
@@ -75,7 +75,8 @@ x = par_boss.x;//obj_ovni.x
           <argument>
             <kind>1</kind>
             <string>effect_create_above(ef_smokeup, x,y,5,c_white );
-instance_destroy();
+//instance_destroy();
+vspeed = 0;
 </string>
           </argument>
         </arguments>
@@ -99,7 +100,33 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>effect_create_above(ef_smokeup, x,y,5,c_white );
-instance_destroy();
+obj_tanque.solid = false;
+//instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Draw hurricane
+draw_self();
+draw_sprite_stretched_ext( spr_hurricane,-1,par_boss.x - 40,par_boss.y,80,y - 210, c_white,1);
 </string>
           </argument>
         </arguments>

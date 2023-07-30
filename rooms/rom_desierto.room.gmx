@@ -54,7 +54,7 @@
     <instance objName="obj_solido" x="0" y="384" name="inst_9A14F5EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_solido" x="832" y="384" name="inst_33DF5BEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_base" x="0" y="640" name="inst_8D408418" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ovni" x="416" y="-96" name="inst_F5AD73CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_BossDesierto" x="416" y="-96" name="inst_F5AD73CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_control" x="64" y="0" name="inst_B06E6716" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tropaArena" x="192" y="192" name="inst_410F8F5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tropaArena" x="352" y="192" name="inst_F2354719" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

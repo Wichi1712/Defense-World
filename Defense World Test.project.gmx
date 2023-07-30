@@ -186,7 +186,7 @@
     <objects name="Enemigos">
       <objects name="primero">
         <object>objects\obj_tropaArena</object>
-        <object>objects\obj_ovni</object>
+        <object>objects\obj_BossDesierto</object>
         <object>objects\obj_fuego</object>
         <object>objects\obj_balaBoss2</object>
         <object>objects\obj_balaBoss</object>
